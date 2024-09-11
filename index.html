@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        #sobre {
+            text-align: center;
+        }
+
+        #portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        #portfolio div {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        #portfolio img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 0.75rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#blog">Blog</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Sou um profissional apaixonado por [seu campo de atuação]. Aqui você encontrará meus projetos, experiências e ideias que compartilho através do blog. Fique à vontade para explorar e entrar em contato!</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio/Projetos</h2>
+        <div>
+            <img src="projeto1.jpg" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição breve do projeto.</p>
+        </div>
+        <div>
+            <img src="projeto2.jpg" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição breve do projeto.</p>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Breve descrição dos temas que você aborda no blog.</p>
+        <ul>
+            <li><a href="#">Postagem 1: Título do artigo</a></li>
+            <li><a href="#">Postagem 2: Título do artigo</a></li>
+            <!-- Adicione mais postagens conforme necessário -->
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form class="contact-form">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Seu Nome - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
